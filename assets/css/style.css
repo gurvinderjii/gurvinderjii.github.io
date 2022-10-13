@@ -28,13 +28,8 @@ html{
     top: calc(50% - 50px);
     left: calc(50% - 50px);
     border: 3px solid #FA6B44;
-<<<<<<< HEAD
     border-bottom-color: white;
     border-top-color: white;
-=======
-    border-top-color: white;
-    border-bottom-color: white;
->>>>>>> e2f73ad67dde45d343f6545bb768377bfd0a3c8b
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -47,13 +42,8 @@ html{
     top: calc(50% - 40px);
     left: calc(50% - 40px);
     border: 3px solid #fdbf50;
-<<<<<<< HEAD
     border-right-color: white;
     border-left-color: white;
-=======
-    border-left-color: white;
-    border-right-color: white;
->>>>>>> e2f73ad67dde45d343f6545bb768377bfd0a3c8b
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -66,13 +56,8 @@ html{
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 3px solid black;
-<<<<<<< HEAD
     border-bottom-color: white;
     border-top-color: white;
-=======
-    border-top-color: white;
-    border-bottom-color: white;
->>>>>>> e2f73ad67dde45d343f6545bb768377bfd0a3c8b
     border-radius: 50%;
     width: 60px;
     height: 60px;
