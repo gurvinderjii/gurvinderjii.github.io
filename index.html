@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" id="HTML">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurvinderjii</title>
+    
+    <!-- main css file  -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- fevicon link  -->
+    <link rel="icon" href="/assets/img/fevicon.png">
+
+    <!-- Google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome script link -->
+    <script src="https://kit.fontawesome.com/df8a1720f3.js" crossorigin="anonymous"></script>
+</head>
+<body onload="preload()">
+
+<!-- ******************* Pre-loader *************** -->
+    
+    <div id="Preloader">
+        <div class="First_loader">
+            <div class="Second_loader">
+                <div class="Third_loader"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- ************************ Services Dialogue box start ******************* -->
+    <section id="Service_Dialogue_Box">
+        <div class="service-dialogue">
+            <div class="div-1">
+                <i class="fa-regular fa-circle-xmark Service-M-icon" onclick="Service_1_close()"></i>
+                <h1>Building...</h1>
+            </div>
+            <div class="div-2">
+            </div>
+        </div>
+    </section>
+<!-- ******************* Services Dialogue box end **************** -->
+
+<!-- **************** Home tab start **************** -->
+    <header id="Home" >
+        <div id="header">
+            <div class="Nav_bar">
+                <nav>
+                    <img src="/assets/img/fevicon.png" alt="Logo" class="logo">
+                    <ul id="sidemenu">
+                        <a href="#Home"><li>Home</li></a>
+                        <a href="#About"><li>About</li></a>
+                        <a href="#Portfolio"><li>Portfolio</li></a>
+                        <a href="#Services"><li>Services</li></a>
+                        <a href="#Contact"><li>Contact</li></a>
+                        <i class="fi-xwluxl-times-wide Menu-btns Menu-btn-1" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars Menu-btns Menu-btn-2" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+        <div id="profile">
+            <div class="container-box">
+                <div class="row-line">
+                    <div class="profile-col-1" data-aos="flip-left" data-aos-duration="1500">
+                        <img src="/assets/img/Profile_Pic.png" alt="Profile_Pic" >
+                    </div>
+                    <div class="profile-col-2" data-aos="zoom-in" data-aos-duration="1200">
+                        <div class="information">
+                            <p>Hi,<br>I am <span>Gurvinder Singh</span></p>
+                            
+                            <!-- Animated text -->
+                            <div id="Animated">
+                                <span id="text1"></span>
+                                <span id="text2"></span>
+                            </div>
+                            
+                            <svg id="filters">
+                                <defs>
+                                    <filter id="threshold">
+                                        <feColorMatrix in="SourceGraphic"
+                                        type="matrix"
+                                        values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- ***************** Home tab end ***************** -->
+
+<!-- **************** About tab start **************** -->
+    <div id="About">
+        <div class="container-box">
+            <div class="row-line">
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="/assets/img/IMG_1.png" alt="Image" class="image_1">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p class="bio">A Creative and Smartworking Graphic and Web Designer, <br class="Line-break-1">Who want to go on the next Level of Creativity.</p>
+                    <div class="About-div">
+                        <div class="content">
+                            <p class="content_link active_link" onclick="opencontent('skills')">Technical Skills</p>
+                            <p class="content_link" onclick="opencontent('education')">Education</p>
+                        </div>
+                        <div class="content_data active_data" id="skills">
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>MS-Office</span></div>
+                                <p>Excel, Word, Powerpoint, Wordpad, Notepad and Paint</p>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>Adobe Suite</span></div>
+                                <p>Photoshop, Illustrator and Indesign</p>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>Coding</span></div>
+                                <p>HTML, CSS, Javascript and Python</p>
+                            </div>
+                        </div>
+                        <div class="content_data" id="education">
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>10th</span></div>
+                                <p>From C.B.S.E. in 2020</p>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>12th</span></div>
+                                <p>From C.B.S.E. in 2022</p>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>Graduation</span></div>
+                                <p>Pursuing ( BCA )</p>
+                            </div>
+                            <div data-aos="fade-right" data-aos-duration="1500">
+                                <div><i class="fa-solid fa-angles-right"></i><span>Diploma in ITC</span></div>
+                                <p>(Information Technology in Computer)<br>From F-tec Bakhtawarpur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- **************** About tab end **************** -->
+    
+<!-- **************** Services tab start **************** -->
+    <div id="Services">
+        <div class="container-box">
+            <h1 class="servise-title" data-aos="fade-up" data-aos-duration="1500">My Services</h1>
+            <div class="row-line">
+                <div class="services-col-1">
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="1500">
+                        <i class="fa-solid fa-pen-nib Service-icon"></i><br>
+                        <h2>Graphic Designing</h2>
+                        <p>All Graphic work like Logo, CV, Poster, Visiting Card and Add.</p>
+                        <div onclick="Service_1_open()"><i class="fa-solid fa-up-right-from-square link-icon Service-M-icon"></i></div>
+                    </div>
+                </div>
+                <div class="services-col-2">
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="1500">
+                        <i class="fa-solid fa-code Service-icon Service-M-icon-2"></i><br>
+                        <h2>Web Designing</h2>
+                        <p>Fully Working and Responsive Website with a Great Design</p>
+                        <div onclick="Service_1_open()"><i class="fa-solid fa-up-right-from-square link-icon Service-M-icon"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ******************* Services tob end **************** -->
+
+<!-- ************************ Contact Tab start ******************* -->
+    <div id="Contact">
+        <div class="container-box">
+            <div class="row-line">
+                <div class="contact-col-1">
+                    <h1 class="contact-title" data-aos="fade-right" data-aos-duration="1000">Contact Me</h1>
+                    <div class="contact-Gmail contact-link-gap">
+                        <i  class="fa-solid fa-envelope contact-icon contact-icon-1"
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                        </i>
+                        <a  href="mailto:gurvindersingh827509@gmail.com" 
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                            <p class="contact-text">Gurvindersingh827509@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contact-Phone contact-link-gap">
+                        <i  class="fa-solid fa-phone contact-icon contact-icon-1" 
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                        </i>
+                        <a  href="tel:7428460209" 
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                            <p class="contact-text">+91 7428460209</p>
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a  href="https://www.instagram.com/igurvinder.dev/"  
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                            <li>
+                                <i class="fa-brands fa-instagram contact-icon-2"></i>
+                            </li>
+                        </a>
+                        <a  href="https://www.facebook.com/13gurvinderjii-103099855312124/"  
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                            <li>
+                                <i class="fa-brands fa-facebook contact-icon-2"></i>
+                            </li>
+                        </a>
+                        <a  href="https://github.com/gurvinderjii"  
+                            data-aos="fade-right" 
+                            data-aos-duration="1000">
+                            <li>
+                                <i class="fa-brands fa-github contact-icon-2"></i>
+                            </li>
+                        </a>
+                        <Div 
+                            class="Download_CV"
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                            <a href="/assets/img/Gurvinder-Resume.pdf" download="Gurvinder-Resume">Download CV</a>
+                        </Div>
+                    </div>
+                </div>
+
+                <div class="contact-col-2">
+                    <form name="submit-to-google-sheet">
+                        <input
+                            type="text"  
+                            name="Name" 
+                            placeholder="Enter Name" 
+                            class="message message-name" 
+                            required 
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                        <input
+                            type="email" 
+                            name="Email" 
+                            placeholder="Enter Gmail" 
+                            class="message message-gmail" 
+                            required 
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                        <textarea
+                            name="Message" 
+                            placeholder="Enter Message" 
+                            class="message message-text" 
+                            required 
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                        </textarea>
+                        <button 
+                            class="message-btn"
+                            data-aos="fade-right"
+                            data-aos-duration="1000">
+                            Submit
+                        </button>
+                    </form><br>
+                    <span class="Msg-text">
+                        <i id="message-success"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--************************ Contact Tab end *******************-->
+
+<!--************************ Copyright *******************-->
+    <div id="Copyright">
+        <i class="copyright-text">Copyright © 2022 India. Made by <span>Gurvinder Singh</span></i>
+    </div>
+</div>
+
+<!-- main script file -->
+<script src="/assets/js/main.js"></script>
+
+<!-- Vendor script files -->
+    <script src="/assets/js/aos.js"></script>
+    <!-- <script src="/assets/js/jquery-3.6.1.js"></script> -->
+    
+    <script>AOS.init();</script>
+
+    <!-- Vendor css files  -->
+    <link rel="stylesheet" href="/assets/css/aos.css" >
+        
+
+</body>
+</html>

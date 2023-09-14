@@ -1,0 +1,1854 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ************* Pre-loader *********** */
+#Preloader{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+}
+.First_loader::before{
+    content: '';
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 3px solid #FA6B44;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: animate-preloader-1 1s linear infinite;
+    animation: animate-preloader-1 1s linear infinite;
+}
+.Second_loader::before{
+    content: '';
+    position: fixed;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    border: 3px solid #fdbf50;
+    border-right-color: white;
+    border-left-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: animate-preloader-2 1s linear infinite;
+    animation: animate-preloader-2 1s linear infinite;
+}
+.Third_loader::before{
+    content: '';
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 3px solid black;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader-3 1s linear infinite;
+    animation: animate-preloader-3 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @-webkit-keyframes animate-preloader-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes animate-preloader-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+
+/* ************* Navbar************* */
+
+#Home{
+    height: 100vh;
+}
+#header{
+    z-index: 5;
+    position: sticky;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+}
+.container-box{
+    padding: 15px 7%;
+    width: 99.9%;
+}
+.Nav_bar{
+    padding: 0 8%;
+}
+nav{
+    padding-top: 0px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav .logo{
+    height: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    color: black;
+    font-size: 14pt;
+    font-weight: 300;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    height: 32px;
+    width: 120px;
+    border-radius: 10px;
+    padding-top: 2px;
+}
+nav ul li:hover{
+    color: white;
+    background-color: #fdbf50;
+    box-shadow: 0 5px 10px 1px #f27f5f;
+}
+nav ul a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+nav .Menu-btns{
+    cursor: pointer;
+}
+
+/* ************* Profile *********** */
+#profile{
+    overflow-x: hidden;
+    padding: 100px 0;
+}
+.row-line{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.profile-col-1{
+    flex-basis: 40%;
+}
+.profile-col-1 img{
+    border-radius: 50%;
+    width: 90%;
+    border: 17px solid #fdbf50;
+}
+.profile-col-2{
+    flex-basis: 55%;
+}
+.information{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.profile-col-2 p{
+    padding-top: 70px;
+    font-size: 34pt;
+    line-height: 60px;
+    margin-right: 0;
+}
+.profile-col-2 p span{
+    color: #fdbf50;
+    font-size: 36pt;
+}
+
+/************* Animated text ************/
+
+#Animated{
+    padding: 5px 0 0 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+#filters{
+    height: 90px;
+}
+#text1, #text2 {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    display: inline-block;
+    font-family: "Audiowide";
+    font-size: 42pt;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #FA6B44;
+}
+
+/* ************* About ************** */
+
+#About{
+    padding-top: 60px;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 .image_1{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    padding: 20px 0 0 6%;
+}
+.about-col-2 h1{
+    font-size: 35pt;
+    font-weight: 500;
+    color: #fdbf50;
+}
+.about-col-2 .bio{
+    font-weight: 300;
+    font-size: 15pt;
+    line-height: 28px;
+}
+.about-col-2 .content_link{
+    font-weight: 500;
+    display: inline-block;
+    margin: 25px 20px 0 0;
+    position: relative;
+    cursor: pointer;
+}
+.about-col-2 .content_link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #FA6B44;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.content_link.active_link::after{
+    width: 100%;
+}
+.About-div{
+    height: 350px;
+}
+.about-col-2 .content_data div{
+    margin: 25px 0 0 0;
+}
+.about-col-2 .content_data i{
+    color: #9c9c9c;
+}
+.about-col-2 .content_data span{
+    color: #e04216;
+    font-size: 14pt;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.about-col-2 .content_data p{
+    margin-left: 27px;
+    line-height: 20px;
+}
+.content_data{
+    display: none;
+}
+.content_data.active_data{
+    display: block;
+}
+
+/* ************** Portfolio ************ */
+#Portfolio{
+    margin-top: 80px;
+    width: 100%;
+    height: 820px;
+}
+.Project_Data{
+    display: none;
+}
+.Active_Project_Data{
+    display: block;
+}
+#Portfolio h1{
+    text-align: center;
+    font-size: 35pt;
+    font-weight: 500;
+    color: #fdbf50;
+}
+.work{
+    padding: 20px 25%;
+}
+.Project_link{
+    text-align: center;
+    padding-top: 2px;
+    color: black;
+    width: 120px;
+    height: 32px;
+    border-radius: 9px;
+    font-size: 13pt;
+    font-weight: 300;
+    transition: 0.6s;
+    border: 1.5px solid #fdbf50;
+    cursor: pointer;
+}
+.Active_Project_Link{
+    border: none;
+    padding-top: 2px;
+    background-color: #fdbf50;
+}
+#Portfolio_content{
+    margin-top: 40px;
+}
+.carousel-control-prev-icon{
+    fill: black;
+}
+.prev-icon{
+    color: black;
+    font-size: 50px;
+}
+.next-icon{
+    color: black;
+    font-size: 50px;
+}
+
+/* ************** Services ************** */
+
+#Services{
+    margin-top: 40px;
+}
+.servise-title{
+    text-align: center;
+    font-size: 35pt;
+    font-weight: 500;
+    color: #fdbf50;
+}
+.services-col-1{
+    place-items: center;
+    display: grid;
+    padding: 60px 0;
+    flex-basis: 50%;
+}
+.services-col-2{
+    place-items: center;
+    display: grid;
+    padding: 60px 0;
+    flex-basis: 50%;
+}
+.service-box{
+    border: 2.5px solid #FA6B44;
+    padding: 14% 18%;
+    border-radius: 18px;
+    height: 340px;
+    text-align: center;
+    color: black;
+    transition: 0.7s!important;
+}
+.service-box:hover{
+    background-color: #FA6B44;
+    color: white;
+}
+.service-box .Service-icon{
+    font-size: 60px;
+}
+.service-box h2{
+    margin-top: 5px;
+    font-size: 20pt;
+    font-weight: 450;
+}
+.service-box p{
+    margin-top: 15px;
+    font-size: 13pt;
+    line-height: 24px;
+}
+.service-box div{
+    color: #fdbf50;
+}
+.service-box .link-icon{
+    transition: 0.5s;
+}
+.service-box .link-icon:hover{
+    color: #FA6B44;
+}
+.service-box div .link-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-top: 23px;
+    font-size: 27px;
+    background-color: #f2f2f2;
+}
+
+
+
+/* *************** Service Dialogue box ********************* */
+
+#Service_Dialogue_Box{
+    background-color: white;
+    opacity: 100%;
+    width: 100%;
+    height: 100vh;
+    padding: 5vh 10%;
+    position: fixed;
+    z-index: 21;
+    display: none;
+    transition: 5s;
+}    
+.Service-M-icon{
+    cursor: pointer;
+}
+#Service_Dialogue_Box .service-dialogue{
+    padding: 0 10%;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    background-color: white;
+    opacity: 100%;
+    width: 100%;
+    height: 90vh;
+}    
+.service-dialogue .div-1{
+    width: 100%;
+    float: left;
+    height: 10vh;
+}
+.service-dialogue .div-1 h1{
+    margin-top: 30px;
+    text-align: center;
+}    
+.service-dialogue .div-1 .Service-M-icon{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: -60px;
+    float: right;
+}
+.service-dialogue .div-2{
+    float: left;
+    background-image: url(/assets/img/Service-maintenance.gif);
+    background-size: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}   
+
+
+/* ************** Contact ************ */
+
+#Contact{
+    margin-top: 50px;
+}
+.contact-col-1{
+    flex-basis: 45%;
+    height: 500px;
+}
+.contact-col-1 a{
+    text-decoration: none;
+    color: black;
+}
+.contact-title{
+    line-height: 20px;
+    font-size: 35pt;
+    font-weight: 500;
+    color: #fdbf50;
+    margin: 10px 0 50px 0;
+}
+.contact-icon-1{
+    margin-top: 3px;
+    font-size: 25px;
+    color: #FA6B44;
+}
+.contact-text{
+    margin-left: 20px;
+    font-size: 15pt;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.contact-text:hover{
+    margin-left: 25px;
+    color: black;
+}
+.contact-Gmail a:hover{
+    color: black;
+}
+.contact-Phone a:hover{
+    color: black;
+}
+.contact-icon-2{
+    color: #7c7878;
+    font-size: 27px;
+    transition: color 0.3s;
+}
+.contact-icon-2:hover{
+    color: #FA6B44;
+}
+.contact-link-gap{
+    margin-bottom: 20px;
+}
+.contact-Gmail{
+    display: flex;
+    padding: 0;
+}
+.contact-Phone{
+    display: flex;
+    padding: 0;
+}
+.Download_CV{
+    margin-top: 20px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #fdbf50;
+    color: black;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+.Download_CV a:hover{
+    color: black;
+}
+
+.contact-col-1 li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+.contact-col-2{
+    flex-basis: 50%;
+    height: 550px;
+}
+.contact-col-2 form{
+    width: 100%;
+    height: fit-content;
+}
+.message::placeholder{
+    color: rgb(185, 185, 185);
+}
+.message-name{
+    font-size: 12pt;
+    padding: 0 20px;
+    outline: none;
+    background-color: #575656;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    border: none;
+    width: 100%;
+}
+.message-gmail{
+    font-size: 12pt;
+    padding: 0 20px;
+    outline: none;
+    background-color: #575656;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+    height: 50px;
+    width: 100%;
+}
+.message-text{
+    font-size: 12pt;
+    padding: 0 20px;
+    outline: none;
+    background-color: #575656;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+    height: 180px;
+}
+.message-btn{
+    cursor: pointer;
+    font-size: 12pt;
+    background-color: #FA6B44;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    transition: 0.5s;
+}
+.Msg-text{
+    float: left;
+    margin: -20px;
+    font-size: 11pt;
+}
+#message-success{
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    color: rgb(0, 181, 3);
+}
+
+
+/* ************ Copyright ********** */
+
+#Copyright{
+    display: grid;
+    width: 100%;
+    height: 35px;
+    background-color: #fdbf50;
+    color: black;
+    text-align: center;
+    place-items: center;
+}
+.copyright-text{
+    font-size: 13pt;
+    font-weight: 300;
+}
+.copyright-text span{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************************ */
+/* *************************** Media query ******************************************** */
+/* ************************************************************************************ */
+
+
+/* ************* Mobile Phone Small ************* */
+@media only screen and (max-width: 320px){
+    .container-box{
+        padding: 15px 9%;
+    }
+    nav .logo{
+        height: 30px;
+        margin-top: 5px;
+    }
+    nav ul{
+        background-color: #ffd857;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 30px;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        padding: 15px 0;
+        font-size: 12pt;
+        text-align: left;
+    }
+    nav ul li:hover{
+        background-color: #ffd857;
+        box-shadow: none;
+    }
+    nav .Menu-btns{
+        display: block;
+        font-size: 25px;
+    }
+    nav .Menu-btn-1{
+        color: #000000;
+        position: absolute;
+        font-size: 30px;
+        top: 10px;
+        right: 20px;
+    }
+    nav .Menu-btn-2{
+        margin-top: 5px;
+    }
+
+    [data-aos-delay] {
+        transition-delay: 0!important;
+    }
+    #profile{
+        padding: 0px 0;
+    }
+    .profile-col-1{
+        flex-basis: 100%;
+        padding: 0 14%;
+    }
+    .profile-col-1 img{
+        border-radius: 50%;
+        width: 100%;
+        border: 8px solid #fdbf50;
+    }
+    .profile-col-2{
+        flex-basis: 100%;
+    }
+    .information{
+        padding: 0;
+    }
+    .profile-col-2 p{
+        width: 240px;
+        padding: 30px 0 0 0;
+        font-size: 17pt;
+        line-height: 30px;
+        margin-right: 0;
+    }
+    .profile-col-2 p span{
+        color: #fdbf50;
+        font-size: 17pt;
+    }
+    #filters{
+        width: 240px;
+    }
+    #text1, #text2{
+        width: 240px;
+        margin-top: 0px;
+        font-size: 27pt;
+        line-height: 35px;
+    }
+
+    /* ********** About ********* */
+    #About{
+        padding-top: 10px;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        padding: 0px;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+        padding: 20px 0 0 5px;
+    }
+    .about-col-2 h1{
+        font-size: 20pt;
+        color: #fdbf50;
+    }
+    .about-col-2 .bio{
+        font-weight: 300;
+        font-size: 10pt;
+        line-height: 16px;
+    }
+    .Line-break-1{
+        display: none;
+    }
+    .about-col-2 .content_link{
+        font-weight: 500;
+        font-size: 11pt;
+        margin: 20px 20px 0 0;
+    }
+    .about-col-2 .content_data span{
+        font-size: 11pt;
+        margin-left: 5px;
+    }
+    .about-col-2 .content_data p{
+        margin-left: 22px;
+        font-size: 10pt;
+        line-height: 15px;
+    }
+
+    /* ************** Portfolio ************ */
+    #Portfolio{
+        margin-top: 0px;
+        height: 430px;
+    }
+    #Portfolio h1{
+        font-size: 20pt;
+    }
+    #Portfolio_content_1{
+        margin-top: 0px;
+    }
+    .prev-icon{
+        margin-left: -50px;
+        font-size: 37px;
+    }
+    .next-icon{
+        margin-right: -50px;
+        font-size: 37pxdiv
+    }
+    .carousel-item{
+        padding: 0%!important;
+        height: 390px!important;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        height: 390px!important;
+    }
+    .w-100{
+        width: 250px;
+    }
+
+    /* *********** Services********* */
+
+    #Services{
+        margin: 20px 0 0 0;
+    }
+    .servise-title{
+        font-size: 20pt;
+    }
+    .services-col-1{
+        padding-top: 20px;
+        padding-bottom: 0;
+        flex-basis: 100%;
+    }
+    .services-col-2{
+        padding-top: 20px;
+        flex-basis: 100%;
+        padding-bottom: 0;
+    }
+    .service-box{
+        padding: 8% 4%;
+        height: 180px;
+    }
+    .service-box .Service-icon{
+        font-size: 30px;
+    }
+    .service-box h2{
+        margin-top: 2px;
+        font-size: 13pt;
+        font-weight: 500;
+    }
+    .service-box p{
+        margin-top: 2px;
+        font-size: 10pt;
+        line-height: 15px;
+    }
+    .service-box div{
+        color: #fdbf50;
+    }
+    .service-box div .link-icon{
+        margin-top: 0px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        padding: 7px 0 0 0;
+        font-size: 20px;
+        background-color: #f2f2f2;
+    }
+
+    /* ********* Service Dialogue box ********** */
+    #Service_Dialogue_Box .service-dialogue{
+        width: 100%;
+        margin: 20vh 0;
+        height: 60vh;
+    } 
+    .service-dialogue .div-1{
+        height: 10vh;
+    }
+    .service-dialogue .div-1 h1{
+        margin-top: 20px;
+        font-size: 14pt;
+    } 
+    .service-dialogue .div-1 .Service-M-icon{
+        font-size: 20px;
+        margin-right: 0px;
+        margin-top: 22px;
+    }
+    .service-dialogue .div-2{
+        float: left;
+        background-size: 50vh;
+        height: 50vh;
+    }   
+
+    /* ********** Contact ********* */
+    #Contact{
+        margin-top: 40px;
+    }
+    .contact-col-1{
+        flex-basis: 100%;
+        height: 200px;
+    }
+    .contact-col-2{
+        flex-basis: 100%;
+        height: 290px;
+    }
+    .contact-title{
+        font-size: 20pt;
+        margin: 0 0 20px 0;
+    }
+    .contact-icon-1{
+        font-size: 17px;
+    }
+    .contact-text{
+        font-size: 10pt;
+        margin-left: 5px;
+    }
+    .contact-text:hover{
+        margin-left: 0px;
+    }
+    .contact-link-gap{
+        margin-bottom: -5px;
+    }
+    .contact-icon-2{
+        color: #7c7878;
+        font-size: 20px;
+    }
+    .Download_CV{
+        height: 30px;
+        padding: 4px;
+        width: 120px;
+        font-size: 10pt;    
+    }
+    .message-name{
+        font-size: 10pt;
+        height: 28px;
+        padding-left: 15px;
+        border-radius: 5px;
+    }
+    .message-gmail{
+        font-size: 10pt;
+        height: 28px;
+        padding-left: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .message-text{
+        font-size: 10pt;
+        padding-left: 15px;
+        height: 150px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .message-btn{
+        font-size: 10pt;
+        height: 24px;
+        width: 90px;
+        margin-top: 7px;
+        margin-left: 2px;
+    }
+    .Msg-text{
+        float: left;
+        margin: -30px 0 0 -10px;
+        font-size: 9pt;
+    }
+
+    /* ************ Copyright ********** */
+
+    #Copyright{
+        margin: 0;
+        padding: 5px 25px;
+        height: 45px;
+        width: 100%;
+    }
+    .copyright-text{
+        font-size: 10pt;
+        font-weight: 300;
+        line-height: 14px;
+    }
+    .copyright-text span{
+        font-weight: 300;
+    }
+}
+
+
+/* ************ Mobile Phone Large*****************/
+/* ********************************************************************************************************************************/
+
+@media only screen and (min-width: 321px) and (max-width: 600px){
+    
+    /* ********* Home *********** */
+    #Home{
+        height: 100vh;
+    }
+    .container-box{
+        padding: 15px 4%;
+    }
+    nav .logo{
+        height: 43px;
+        margin-top: 5px;
+    }
+    nav ul{
+        background-color: #ffd857;
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 80px;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        padding: 20px 0;
+        font-size: 14pt;
+        text-align: left;
+    }
+    nav ul li:hover{
+        background-color: #ffd857;
+        box-shadow: none;
+    }
+    nav .Menu-btns{
+        display: block;
+        font-size: 25px;
+    }
+    nav .Menu-btn-1{
+        color: black;
+        position: absolute;
+        font-size: 33px;
+        top: 16px;
+        right: 15px;
+    }
+    nav .Menu-btn-2{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    [data-aos-delay] {
+        transition-delay: 0!important;
+    }
+    #profile{
+        padding: 0px 0;
+    }
+    .profile-col-1{
+        flex-basis: 100%;
+        padding: 0 14%;
+    }
+    .profile-col-1 img{
+        margin-top: 10vh;
+        border-radius: 50%;
+        width: 100%;
+        border: 12px solid #fdbf50;
+    }
+    .profile-col-2{
+        flex-basis: 100%;
+        padding: 0 5%;
+    }
+    .profile-col-2 p{
+        padding: 30px 0 10px 0;
+        font-size: 23pt;
+        line-height: 35px;
+    }
+    .profile-col-2 p span{
+        color: #fdbf50;
+        font-size: 25pt;
+    }
+    #text1, #text2{
+        margin-top: -10px;
+        font-size: 35pt;
+        line-height: 42px;
+    }
+    
+    /* ********** About ********* */
+    #About{
+        padding-top: 20px;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        padding: 0px 15%;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+        padding-top: 40px;
+    }
+    .about-col-2 h1{
+        font-size: 25pt;
+        color: #fdbf50;
+    }
+    .about-col-2 .bio{
+        font-weight: 300;
+        font-size: 11pt;
+        line-height: 20px;
+    }
+    .Line-break-1{
+        display: none;
+    }
+    .about-col-2 .content_link{
+        font-size: 12pt;
+    }
+    .about-col-2 .content_data span{
+        font-size: 12pt;
+    }
+    .about-col-2 .content_data p{
+        font-size: 11pt;
+    }
+
+    /* ************** Portfolio ************ */
+    #Portfolio{
+        margin-top: 30px;
+        height: 600px;
+    }
+    #Portfolio h1{
+        font-size: 25pt;
+    }
+    .work{
+        padding: 20px 4% 0 4%;
+    }
+    .work_col{
+        width: 100px;
+        height: 30px;
+        font-size: 11pt;
+        border: 1.5px solid #fdbf50;
+    }
+    #Portfolio_content_1{
+        margin-top: 0px;
+    }
+    .prev-icon{
+        margin-left: -20px;
+    }
+    .next-icon{
+        margin-right: -20px;
+    }
+    .carousel-item{
+        padding: 5%!important;
+        height: 500px!important;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        height: 500px!important;
+    }
+    .w-100{
+        width: 300px;
+    }
+    
+    /* *********** Services********* */
+    
+    #Services{
+        margin: 20px 0 0 0;
+    }
+    .servise-title{
+        font-size: 25pt;
+    }
+    .services-col-1{
+        padding: 30px 5% 0 6%;
+        flex-basis: 100%;
+    }
+    .services-col-2{
+        padding: 30px 5% 0 6%;
+        flex-basis: 100%;
+    }
+    .service-box{
+        padding: 8% 6%;
+        height: 240px;
+    }
+    .service-box .Service-icon{
+        font-size: 37px;
+    }
+    .service-box h2{
+        margin-top: 3px;
+        font-size: 15pt;
+        font-weight: 500;
+    }
+    .service-box p{
+        margin-top: 6px;
+        font-size: 11pt;
+        line-height: 17px;
+    }
+    .service-box div {
+        color: #fdbf50;
+    }
+    .service-box div  .link-icon{
+        margin-top: 20px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        padding: 11px;
+        font-size: 25px;
+        background-color: #f2f2f2;
+    }
+
+    /* ********* Service Dialogue box ********** */
+    #Service_Dialogue_Box .service-dialogue{
+        width: 100%;
+        margin: 20vh 0;
+        height: 60vh;
+    } 
+    .service-dialogue .div-1{
+        height: 10vh;
+    }
+    .service-dialogue .div-1 h1{
+        margin-top: 25px;
+        font-size: 17pt;
+    } 
+    .service-dialogue .div-1 .Service-M-icon{
+        font-size: 24px;
+        margin-right: 0px;
+        margin-top: 22px;
+    }
+    .service-dialogue .div-2{
+        float: left;
+        background-size: 50vh;
+        height: 50vh;
+    }  
+
+
+    /* ****** Contact ***** */
+    
+    #Contact{
+        margin-top: 40px;
+    }
+    .contact-col-1{
+        flex-basis: 100%;
+        padding-left: 15px;
+        height: 250px;
+    }
+    .contact-title{
+        font-size: 25pt;
+        margin-bottom: 40px;
+    }
+    .contact-icon-1{
+        font-size: 20px;
+    }
+    .contact-text{
+        font-size: 13pt;
+    }
+    .contact-text:hover{
+        margin-left: 20px;
+        color: black;
+    }
+    .contact-link-gap{
+        margin-bottom: 0px;
+    }
+    .contact-icon-2{
+        font-size: 25px;
+    }
+    .Download_CV{
+        height: 35px;
+        padding: 6px;
+        width: 130px;
+        font-size: 11pt;
+    }
+    .contact-col-2{
+        flex-basis: 100%;
+        height: 390px;
+        padding: 0 3%;
+    }
+    .message-name{
+        padding: 0 12px;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .message-gmail{
+        padding: 0 12px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+    .message-text{
+        padding: 5px 12px;
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+    .message-btn:hover{
+        color: white;
+    }
+    .Msg-text{
+        float: left;
+        margin: -25px 0 0 -17px;
+        font-size: 10pt;
+    }
+    
+    /* ********** Copyright ******* */
+    
+    .copyright-text{
+        font-size: 10.5pt;
+    }
+    .copyright-text span{
+        font-weight: 400;
+    }
+}
+
+/* *************** Tablet  ************** */
+/* ********************************************************************************************************************************/
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    /* ********* Home *********** */
+    .container-box{
+        padding: 15px 6%;
+    }
+    nav{
+        padding-top: 10px;
+    }
+    nav .logo{
+        height: 45px;
+    }
+    nav ul{
+        background-color: #ffd857;
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 60px;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        margin-left: -5px;
+        display: block;
+        padding: 20px 0;
+        font-size: 14pt;
+        text-align: left;
+    }
+    nav ul li:hover{
+        background-color: #ffd857;
+        box-shadow: none;
+    }
+    nav .Menu-btns{
+        display: block;
+        font-size: 25px;
+    }
+    [data-aos-delay] {
+        transition-delay: 0!important;
+    }
+    nav .Menu-btn-1{
+        color: black;
+        position: absolute;
+        font-size: 33px;
+        top: 14px;
+        right: 36px;
+    }
+    nav .Menu-btn-2{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .profile-col-1{
+        flex-basis: 100%;
+        display: grid;
+        place-items: center;
+        padding: 0 13%;
+    }
+    .profile-col-1 img{
+        margin-top: -80px;
+        border-radius: 50%;
+        width: 100%;
+        max-width: 350px;
+        border: 12px solid #fdbf50;
+    }
+    .profile-col-2{
+        text-align: left;
+        flex-basis: 100%;
+        padding: 30px 0;
+    }
+    .information{
+        padding-left: 9%;
+    }
+    .profile-col-2 p{
+        padding: 30px 0 10px 0;
+        font-size: 28pt;
+        line-height: 35px;
+    }
+    .profile-col-2 p span{
+        color: #fdbf50;
+        font-size: 30pt;
+    }
+    #text1, #text2{
+        text-align: left;
+        font-size: 40pt;
+        margin-top: -30px;
+    }
+    
+    /* ********** About ********* */
+    #About{
+        padding-top: 20px;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        padding: 0 20%;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+        padding: 60px 8% 0 8%;
+    }
+    .about-col-2 h1{
+        font-size: 30pt;
+        color: #fdbf50;
+    }
+    .about-col-2 .bio{
+        font-weight: 300;
+        font-size: 14pt;
+        line-height: 23px;
+    }
+    .about-col-2 .content_link{
+        font-size: 14pt;
+    }
+    .about-col-2 .content_data span{
+        font-size: 13pt;
+    }
+
+    /* ************** Portfolio ************ */
+    #Portfolio{
+        margin-top: 40px;
+        height: 800px;
+    }
+    #Portfolio h1{
+        font-size: 30pt;
+    }
+    .work{
+        padding: 20px 12% 10px 12%;
+    }
+    .work_col{
+        width: 110px;
+        height: 32px;
+        font-size: 12pt;
+        font-weight: 300;
+        transition: 0.6s;
+        border: 1.5px solid #fdbf50;
+    }
+    #Portfolio_content_1{
+        margin-top: 0px;
+    }
+    .carousel-item{
+        padding: 5%!important;
+        height: 660px!important;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        height: 660px!important;
+    }
+    .w-100{
+        width: 450px;
+    }
+    
+    /* *********** Services********* */
+
+    #Services{
+        margin: 50px 0 0 0;
+    }
+    .servise-title{
+        font-size: 30pt;
+    }
+    .services-col-1{
+        display: grid;
+        padding: 60px 0;
+        flex-basis: 100%;
+        place-items: center;
+    }
+    .services-col-2{
+        display: grid;
+        padding: 0px;
+        flex-basis: 100%;
+        place-items: center;
+    }
+    .service-box{
+        min-width: 300px;
+        max-width: 400px;
+        padding: 4% 6%;
+        height: 260px;
+    }
+    .service-box .Service-icon{
+        font-size: 45px;
+    }
+    .service-box h2{
+        margin-top: 3px;
+        font-size: 17pt;
+        font-weight: 500;
+    }
+    .service-box p{
+        margin-top: 6px;
+        font-size: 12pt;
+        line-height: 17px;
+    }
+    .service-box a{
+        color: #fdbf50;
+    }
+    .service-box a .link-icon{
+        margin-top: 20px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 12px;
+        font-size: 27px;
+        background-color: #f2f2f2;
+    }
+    
+    /* ********* Service Dialogue box ********** */
+    #Service_Dialogue_Box .service-dialogue{
+        width: 100%;
+        margin: 20vh 0;
+        height: 60vh;
+    } 
+    .service-dialogue .div-1{
+        height: 10vh;
+    }
+    .service-dialogue .div-1 h1{
+        margin-top: 32px;
+        font-size: 22pt;
+    } 
+    .service-dialogue .div-1 .Service-M-icon{
+        font-size: 28px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .service-dialogue .div-2{
+        float: left;
+        background-size: 50vh;
+        height: 50vh;
+    }  
+
+    /* ****** Contact ***** */
+    
+    #Contact{
+        margin-top: 40px;
+    }
+    .contact-col-1{
+        flex-basis: 100%;
+        padding-left: 15px;
+        height: 290px;
+    }
+    .contact-title{
+        text-align: center;
+        font-size: 30pt;
+        margin-bottom: 55px;
+    }
+    .contact-icon-1{
+        font-size: 28px;
+    }
+    .contact-text{
+        font-size: 16pt;
+    }
+    .contact-text:hover{
+        margin-left: 20px;
+        color: black;
+    }
+    .contact-link-gap{
+        margin-bottom: 0px;
+    }
+    .contact-icon-2{
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    .Download_CV{
+        height: 35px;
+        padding: 6px;
+        width: 130px;
+        font-size: 11pt;
+    }
+    .contact-col-2{
+        padding: 10px 2%;
+        flex-basis: 100%;
+        height: 440px;
+    }
+    .message-text{
+        padding-top: 8px;
+    }
+    .message-btn{
+        font-size: 13pt;
+        height: 33px;
+        width: 110px;
+    }
+    .message-btn:hover{
+        color: white;
+    }
+    .Msg-text{
+        float: left;
+        margin: -25px 0 0 -17px;
+        font-size: 12pt;
+    }
+
+    /* ********** Copyright ******* */
+    #Copyright{
+        height: 40px;
+    }
+    .copyright-text{
+        font-size: 13pt;
+    }
+    .copyright-text span{
+        font-weight: 400;
+    }
+}
+
+/* ************** Laptop Small ************* */
+/* ***************************************************************************************************************** */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .container-box{
+        padding: 15px 6%;
+    }
+    /* ************* Header *********** */
+    nav .logo{
+        height: 45px;
+    }
+    .Menu-btns{
+        display: none!important;
+    }
+    nav ul{
+        padding-top: 10px;
+    }
+    nav ul li{
+        margin: 12px 10px;
+    }
+
+    /* ************* Profile *********** */
+    .profile-col-1{
+        flex-basis: 40%;
+    }
+    .profile-col-2{
+        flex-basis: 60%;
+    }
+    .profile-col-2 p{
+        padding-top: 60px;
+        font-size: 30pt;
+        line-height: 45px;
+    }
+    .profile-col-2 p span{
+        font-size: 32pt;
+    }
+    #Animated{
+        padding: 0;
+        margin-top: -20px;
+    }
+    #text1, #text2 {
+        font-size: 35pt;
+    }
+
+    /* ************* About ************** */
+    .about-col-1{
+        flex-basis: 40%;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+        padding: 0 0 0 4%;
+    }
+    .about-col-2 h1{
+        font-size: 32pt;
+    }
+    .Line-break-1{
+        display: none;
+    }
+    .about-col-2 .bio{
+        font-size: 13pt;
+        line-height: 22px;
+    }
+    .about-col-2 .content_link{
+        margin-top: 10px;
+    }
+    .about-col-2 .content_data div{
+        margin: 20px 0 0 0;
+    }
+    .about-col-2 .content_data span{
+        font-size: 12pt;
+    }
+    .about-col-2 .content_data p{
+        font-size: 11pt;
+    }
+
+    /* ************** Portfolio ************ */
+    #Portfolio{
+        margin-top: 40px;
+        height: 800px;
+    }
+    #Portfolio h1{
+        font-size: 32pt;
+    }
+    .work{
+        padding: 20px 18% 10px 18%;
+    }
+    .work_col{
+        width: 110px;
+        height: 32px;
+        font-size: 12pt;
+        font-weight: 300;
+        transition: 0.6s;
+        border: 1.5px solid #fdbf50;
+    }
+    #Portfolio_content_1{
+        margin-top: 20px;
+    }
+    .prev-icon{
+        margin-left: -20px;
+    }
+    .next-icon{
+        margin-right: -20px;
+    }
+    .carousel-item{
+        padding: 5%!important;
+        height: 660px!important;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        height: 660px!important;
+    }
+    .w-100{
+        width: 450px;
+    }
+
+    /* ************** Services ************** */
+    .servise-title{
+        font-size: 32pt;
+    }
+    .services-col-1{
+        flex-basis: 47%;
+    }
+    .services-col-2{
+        flex-basis: 47%;
+    }
+    .service-box{
+        padding: 10% 10%;
+        height: 290px;
+    }
+    .service-box .Service-icon{
+        font-size: 45px;
+    }
+    .service-box h2{
+        margin-top: 10px;
+        font-size: 18pt;
+    }
+    .service-box p{
+        margin-top: 12px;
+        font-size: 12pt;
+        line-height: 18px;
+    }
+    .service-box a .link-icon{
+        margin-top: 20px;
+    }
+
+    /* ********* Service Dialogue box ********** */
+    #Service_Dialogue_Box .service-dialogue{
+        width: 100%;
+        margin: 10vh 0;
+        height: 80vh;
+    } 
+    .service-dialogue .div-1{
+        height: 15vh;
+    }
+    .service-dialogue .div-1 h1{
+        margin-top: 32px;
+        font-size: 25pt;
+    } 
+    .service-dialogue .div-1 .Service-M-icon{
+        font-size: 28px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .service-dialogue .div-2{
+        float: left;
+        background-size: 65vh;
+        height: 65vh;
+    }
+
+    /* ************** Contact ************ */
+    #Contact{
+        margin-top: 30px;
+    }
+    .contact-col-1{
+        flex-basis: 45%;
+        height: 400px;
+    }
+    .contact-col-2{
+        flex-basis: 50%;
+        height: 400px;
+    }
+    .contact-title{
+        font-size: 32pt;
+    }
+    .contact-link-gap{
+        margin-bottom: 0px;
+    }
+    .contact-icon-2{
+        margin-top: 10px;
+    }
+    .message-name{
+        height: 40px;
+    }
+    .message-gmail{
+        height: 40px;
+    }
+    .message-text{
+        padding-top: 10px;
+    }
+}
+
+/* ***************** Laptop Large ******************* */
+/* ******************************************************************************************************************************** */
+@media only screen and (min-width: 1025px){
+    nav ul{
+        padding-top: 15px;
+    }
+    nav .Menu-btns {
+        display: none;
+    }
+    .information {
+        margin-top: 35px;
+    }
+    #text1, #text2 {
+        margin-top: -20px;
+        font-size: 45pt;
+    }
+    .carousel-item{
+        padding: 0%!important;
+    }
+    .services-col-1{
+        flex-basis: 47%;
+    }
+    .services-col-2{
+        flex-basis: 47%;
+    }
+    .service-box{
+        padding: 10% 18%;
+    }
+    .contact-text:hover{
+        margin-left: 30px;
+        color: #fdbf50;
+    }
+    .message-text{
+        padding: 10px 20px;
+        height: 220px;
+    }
+    .message-btn{
+        border-radius: 8px;
+        height: 40px;
+        width: 120px;
+    }
+    #Copyright{
+        height: 40px;
+    }
+}
